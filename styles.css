@@ -1,0 +1,280 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.sellContainer {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vh;
+    width: 6vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 500px;
+    background: rgba(217, 217, 217, 0.45);
+    border: 4px solid #FCDDEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.section {
+    height: 100vh; /* Полная высота экрана */
+    width: 100vw; /* Полная ширина экрана */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#section1 {
+    background: url('background.jpg') no-repeat center center/cover; /* Замените на соответствующее изображение */
+}
+
+#section1 .mainDiv {
+    height: 89vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.infoAboutUs {
+    width: 38vw;
+    height: 55vh;
+    margin: 0 5vw 0 0;
+    background: rgba(217, 217, 217, 0.45);
+    border: 4px solid #FCDDEC;
+    border-radius: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 2vw;
+}
+
+.infoAboutUs > div > p {
+    color: white;
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+}
+
+.infoAboutUs > p {
+    color: white;
+    font-size: 2vw;
+    text-align: left;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+#section2 {
+    background: linear-gradient(90deg, #017992 0%, #1E3073 25%, #2C115E 50%, #670C87 75%, #A601B7 100%);
+}
+
+#section2 .mainDiv {
+    margin-top: 7vw;
+    height: 89vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#section2 .mainDiv > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.containerForMain {
+    width: 80vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.mainTeamPerson {
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 4vw;
+    margin: 0 5vw 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainTeamPerson > p {
+    color: white;
+    font-size: 1.3vw;
+    text-align: left;
+    width: 80%;
+    box-sizing: border-box;
+}
+.containerForAll {
+    width: 80vw;
+    margin-top: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Изменение на flex-start для выравнивания элементов слева */
+    box-sizing: border-box;
+    margin-bottom: 3vw;
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+    white-space: nowrap; /* Запрещаем перенос элементов на новую строку */
+    padding-bottom: 1vw; /* Опционально: добавление небольшого отступа внизу, чтобы scrollbar не перекрывал элементы */
+}
+
+.teamPerson {
+    width: 16vw;
+    aspect-ratio: 1 / 1;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 4vw;
+    margin: 0 3vw; /* Убираем второе значение, т.к. оно дублируется */
+    display: inline-flex; /* Inline-flex чтобы элементы выстраивались в одну линию */
+    align-items: center;
+    justify-content: center;
+}
+
+.teamPerson > p {
+    color: white;
+    font-size: 1.1vw;
+    text-align: left;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+
+#section3 {
+    background: linear-gradient(90deg, #017992 0%, #1E3073 25%, #2C115E 50%, #670C87 75%, #A601B7 100%);
+}
+
+.projectContainer {
+    aspect-ratio: 1 / 1;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 4vw;
+    margin: 0 3vw;
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    padding: 1vw;
+    font-size: 20px;
+    color:#3b153f;
+}
+
+::-webkit-scrollbar {
+    width: 1px; /* Ширина скроллбара */
+    height: 4px;
+}
+
+/* Стиль "ползунка" скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.85); /* Цвет ползунка */
+    border-radius: 10px; /* Закругление углов ползунка */
+}
+/* При наведении курсора на ползунок */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Цвет ползунка при наведении */
+}
+
+/* Стиль области скроллбара (трек) */
+::-webkit-scrollbar-track {
+    height: 6px;
+    background-color: rgba(98, 98, 98, 0.65); /* Цвет фона трека */
+    border-radius: 10px; /* Закругление углов трека */
+}
+
+
+
+.navigationContainer {
+    position: absolute;
+    top: 2vh;
+    width: 75vw;
+    aspect-ratio: 1 / 0.04;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 28px;
+}
+
+.navigationContainer > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8vw;
+    text-align: center;
+    margin: 0 2vw;
+    padding: 0;
+}
+
+.active-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8vw;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 2vw;
+    padding: 0;
+}
+
+#section4 {
+    background: linear-gradient(90deg, #017992 0%, #1E3073 25%, #2C115E 50%, #670C87 75%, #A601B7 100%);
+}
+
+#section4 .mainDiv {
+    height: 89vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 5vw;
+}
+
+.info {
+    width: 70vw;
+    aspect-ratio: 1 / 0.55;
+    background: rgba(217, 217, 217, 0.4);
+    border-radius: 4vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #3b153f;
+    padding: 20px;
+    line-height: 3.6;
+}
+
+
+
+.tempInfo {
+    font-size: 20px;
+    font-weight: 500;
+    color: #FCDDEC;
+}
