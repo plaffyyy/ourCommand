@@ -67,6 +67,7 @@ body {
     justify-content: flex-start;
     box-sizing: border-box;
     padding: 2vw;
+    font-family: "Monotype Corsiva" Cursive;
 }
 
 .infoAboutUs > div > p {
@@ -111,7 +112,7 @@ body {
 
 .containerForMain {
     width: 80vw;
-
+    font-family: "Monotype Corsiva" Cursive;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,6 +222,7 @@ body {
     align-items: center;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 28px;
+    font-family: "Literata" serif;
 }
 
 .navigationContainer > a {
